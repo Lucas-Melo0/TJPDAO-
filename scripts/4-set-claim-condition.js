@@ -9,7 +9,7 @@ const editionDrop = sdk.getEditionDrop("0x4Ee8e6D37B8D1a049a0c795A65962b9921D6cf
     const claimConditions = [{
    
       startTime: new Date(),
-      
+        
       maxQuantity: 5_000,
      
       price: 0,
