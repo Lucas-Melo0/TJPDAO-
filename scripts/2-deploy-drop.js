@@ -42,6 +42,6 @@ import { readFileSync } from "fs";
   merkle: {},
   symbol: ''
 
-
+ Módulo de votos implantado com sucesso no endereço: 0x272aE4f3695e09726E0CE468efD4412610165150
   👋 SDK inicializado pelo endereço: 0x31602Bf490dD3d3Bcbb77d194b0079A0EFfAFA10
 } */
