@@ -3,7 +3,7 @@ import sdk from "./1-initialize-sdk.js";
 
 const editionDrop = sdk.getEditionDrop("0x4Ee8e6D37B8D1a049a0c795A65962b9921D6cf7B");
 
-// Esse é o endereço do nosso contrato ERC-20 do nosso token.
+
 const token = sdk.getToken("0x25f611aEdb913b39e4eCFE8B5a706e91921B6f99");
 
 (async () => {
