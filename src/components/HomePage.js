@@ -4,12 +4,15 @@ import {
   useEditionDrop,
   useToken,
   useVote,
+  useNetwork,
 } from "@thirdweb-dev/react";
 import { useState, useEffect, useMemo } from "react";
 import { AddressZero } from "@ethersproject/constants";
+import { ChainId } from "@thirdweb-dev/sdk";
 
 const App = () => {
   const address = useAddress();
+  const network = useNetwork();
   const connectWithMetamask = useMetamask();
   console.log("👋 Address:", address);
 
@@ -163,6 +166,18 @@ const App = () => {
       setIsClaiming(false);
     }
   };
+
+  if (address && network?.[0].data.chain.id !== ChainId.Rinkeby) {
+    return (
+      <div className="unsupported-network">
+        <h2>Por favor, conecte-se à rede Rinkeby</h2>
+        <p>
+          Essa dapp só funciona com a rede Rinkeby, por favor troque de rede na
+          sua carteira.
+        </p>
+      </div>
+    );
+  }
 
   if (!address) {
     return (
