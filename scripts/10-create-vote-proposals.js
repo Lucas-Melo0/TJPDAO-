@@ -52,7 +52,7 @@ const token = sdk.getToken("0x25f611aEdb913b39e4eCFE8B5a706e91921B6f99");
       amount +
       " tokens do tesouro para " +
       process.env.WALLET_ADDRESS +
-      " por ser uma pessoa incrível?";
+      " com o entuito de organizar o próximo campeonato?";
 
     const executions = [
       {
